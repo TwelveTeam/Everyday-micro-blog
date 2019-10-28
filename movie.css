@@ -1,0 +1,157 @@
+.zhengge{
+    float: left;
+    margin: 0; 
+    width: 100%;
+    border-bottom-style: ridge;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+.hezi{
+    float: left;
+    margin: 0; 
+    width: 100%;
+    border-bottom-style: ridge;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+.hezia{
+    float: left;
+    width: 60%;
+}
+.wzjz{
+    padding-top: 2%;
+    padding-left: 27%;
+}
+.wzjz>a>h3{
+    color: #333;
+}
+.wzjz>a>h3:hover{
+    color: #eb7350;
+}
+img{
+    width: 200px;
+    height: 150px;
+}
+.kkk{
+    float: left;
+}
+.headtx{
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+}
+span{
+    font-size: 5px;
+}
+.youduiqi{
+    float: right;
+    border-left-style: ridge;
+    padding-left: 10px;
+}
+.hezis{
+    float: left;
+    width: 350px;
+    height: 370px;
+    margin-left: 100px;
+    background-color: #f2f2f5;
+}
+.hezic{
+    border-style: ridge;
+    width: 300px;
+    padding: 25px;
+    margin: 25px;
+    background-color: snow;
+}
+.xiaxian{
+    border-bottom-style: ridge;
+}
+.xiaxian>a{
+    padding: 30px;
+}
+.denglu{
+    border-bottom-style: ridge;
+    color: #808080;
+}
+.denglu>input{
+    margin-top: 20px;
+    width: 100%;
+}
+.denglu>span>a{
+    padding-left: 50%;
+}
+#ckbox{
+    width: 20px;
+}
+.btn{
+    background-color:orange;
+    width: 80%;
+    margin: 20px;
+}
+.hezid{
+    border-top-style: ridge;
+    margin-top: 20px;
+    float: left;
+    width: 350px;
+    height: 470px;
+    margin-left: 100px;
+    background-color: #f2f2f5;
+}
+.hezie{
+    width: 300px;
+    height: 900px;
+    padding: 10px;
+    margin: 10px;
+    border-bottom-style: ridge;
+}
+.wzjz>span{
+    color: #333;
+}
+.wzjz>span:hover{
+    color: #eb7350;
+}
+.hezif{
+    float: left;
+    width: 220px;
+    padding: 10px;
+    margin: 0; 
+}
+.wzj{
+    float: left;
+    padding-left: 15%;
+    width: 100%;
+}
+/* .hezig{
+    float: left;
+
+    background-color: #f2f2f5;
+} */
+.sss{
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    background-color: #f2f2f5;
+}
+.bqh{
+    float: left;
+    width: 100%;
+    border-bottom-style: ridge;
+}
+.bq{
+    list-style: none;
+    padding: 0%;
+}
+.bq>li>a{
+    float: left;
+    width: 33.3%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+}
+.bq>li>a:hover{
+    color: #eb7350;
+}

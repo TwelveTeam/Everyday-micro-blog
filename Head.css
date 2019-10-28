@@ -1,0 +1,147 @@
+.blog{
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.navbar{
+    position:absolute;
+}
+
+#page{
+    float: left;
+    width: 60%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.hezis{
+    float: left;
+    width: 350px;
+    height: 370px;
+    margin-left: 100px;
+    background-color: #f2f2f5;
+}
+.hezic{
+    border-style: ridge;
+    width: 300px;
+    padding: 25px;
+    margin: 25px;
+    background-color: snow;
+}
+.xiaxian{
+    border-bottom-style: ridge;
+}
+.xiaxian>a{
+    padding: 30px;
+}
+.denglu{
+    border-bottom-style: ridge;
+    color: #808080;
+}
+.denglu>input{
+    margin-top: 20px;
+    width: 100%;
+}
+.denglu>span>a{
+    padding-left: 50%;
+}
+#ckbox{
+    width: 20px;
+}
+.btn{
+    background-color:orange;
+    width: 80%;
+    margin: 20px;
+}
+.hezid{
+    border-top-style: ridge;
+    margin-top: 20px;
+    float: left;
+    width: 350px;
+    height: 470px;
+    margin-left: 100px;
+    background-color: #f2f2f5;
+}
+.hezie{
+    width: 300px;
+    height: 900px;
+    padding: 10px;
+    margin: 10px;
+    border-bottom-style: ridge;
+}
+.wzjz>span{
+    color: #333;
+}
+.wzjz>span:hover{
+    color: #eb7350;
+}
+.hezif{
+    float: left;
+    width: 220px;
+    padding: 10px;
+    margin: 0; 
+}
+.wzj{
+    float: left;
+    padding-left: 15%;
+    width: 100%;
+}
+
+
+.hezi{
+    float: left;
+    width: 130%;
+
+    border-bottom-style: ridge;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    -webkit-font-smoothing: antialiased;
+}
+.kkk{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.headtx{
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+
+}
+span{
+    font-size: 5px;
+}
+.youduiqi{
+    float: right;
+    border-left-style: ridge;
+    padding-left: 10px;
+}
+
+.menu a{
+    display: block;
+    line-height: 35px;
+    font-size: 12px;
+    color: #333;
+    padding-left: 30px;
+}
+.thead_tr th{
+    line-height: 30px;
+    border-bottom: solid 1px #fbfbfb;
+    color: #999;
+}
+.icon-dot{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #f26d5f;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left:14px;
+}
+tbody td{
+    
+    line-height: 36px;
+    border-bottom: solid 1px black;
+}
+
+
