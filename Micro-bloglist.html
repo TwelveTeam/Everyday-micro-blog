@@ -2,365 +2,531 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>天天微博</title>
-    <link rel="stylesheet" href="Head.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_1470315_ly1a4r87jf.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./Bloglist.css">
-    <link rel="stylesheet" href="Listicon/iconfont.css">
+        <meta charset="utf-8">
+        <title>天天微博</title>
+        <link rel="stylesheet" href="Head.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_1470315_ly1a4r87jf.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./Bloglist.css">
+        <link rel="stylesheet" href="Listicon/iconfont.css">
 </head>
 <style>
-    .UG_nav {
-        border-bottom: 1px solid #e5e5e5;
-        margin-bottom: 20px;
-    }
+        .UG_nav {
+                border-bottom: 1px solid #e5e5e5;
+                margin-bottom: 20px;
+        }
 
-    ol,
-    ul {
-        list-style: none;
-        display: block;
-        list-style-type: disc;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        /* padding-inline-start: 40px; */
-    }
+        ol,
+        ul {
+                list-style: none;
+                display: block;
+                list-style-type: disc;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                /* padding-inline-start: 40px; */
+        }
 
-    .UG_nav li {
-        position: relative;
-        display: inline-block;
-        font-size: 16px;
-        line-height: 40px;
-        margin-right: 42px;
-        cursor: pointer;
-    }
+        .UG_nav li {
+                position: relative;
+                display: inline-block;
+                font-size: 16px;
+                line-height: 40px;
+                margin-right: 42px;
+                cursor: pointer;
+        }
 
-    body div {
-        margin: 0;
-        padding: 0;
-        display: block;
-    }
+        body div {
+                margin: 0;
+                padding: 0;
+                display: block;
+        }
 </style>
 
 <body>
-    <!-- 导航栏 -->
-    <div class="blog">
-        <nav class="navbar navbar-inverse" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">天天微博</a>
+        <!-- 导航栏 -->
+        <div class="blog">
+                <nav class="navbar navbar-inverse" role="navigation">
+                        <div class="container-fluid">
+                                <div class="navbar-header">
+                                        <a class="navbar-brand" href="#">天天微博</a>
+                                </div>
+                                <div>
+                                        <ul class="nav navbar-nav">
+                                                <li><a href="./Everydaymicro-bloghomepage.html">热门</a></li>
+                                                <li><a href="#">头条</a></li>
+                                                <li><a href="./Hotsearch.html">热搜</a></li>
+                                                <li class="active"><a href="./Micro-bloglist.html">榜单</a></li>
+                                                <li><a href="#">搞笑</a></li>
+                                                <li><a href="#">社会</a></li>
+                                                <li><a href="#">时尚</a></li>
+                                                <li><a href="#">电影</a></li>
+                                                <li><a href="#">体育</a></li>
+                                                <li><a href="#">动漫</a></li>
+                                                <input type="text" placeholder="搜索.."
+                                                        style="width: 500px;position:relative;top: 12px; ">
+                                                <li style="float: right;"><a href="#">注册</a></li>
+                                                <li style="float: right;"> <a href="#">登陆</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                </nav>
+                <!-- 导航栏结束 -->
+                <div style="width: 761px;margin-right: 30px;">
+                        <!--  头部 -->
+                        <div class="UG_nav" style=" margin-bottom: 0px;">
+                                <ul
+                                        style="height:40px;list-style:none;display: block;list-style-type: disc;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;">
+                                        <li>24小时</li>
+                                        <li>1小时</li>
+                                        <li>周榜</li>
+                                        <li>月榜</li>
+                                        <li>男榜</li>
+                                        <li>女榜</li>
+                                </ul>
+                        </div>
+                        <!-- 头部结束 -->
+                        <!-- 正文 -->
+                        <div class="UG_contents" id="PCD_pictext_i_v5">
+                                <!--feed内容-->
+                                <ul class="pt_ul clearfix" pagenum="" node-type="feed_list" cursor=""
+                                        style="padding-left: 0px;">
+                                        <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
+                                                href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
+                                                suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
+                                                suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
+                                                <h3 class="list_title_s W_autocut">
+                                                        <div><a target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">#霍思燕生日被杜江感动哭#</a><a
+                                                                        target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">#妻子的浪漫旅行
+                                                                        杜江霍思燕#</a> 今日《妻子的浪漫旅行》第三季官宣<a target="_blank"
+                                                                        render="ext" extra-data="type=atname"
+                                                                        href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
+                                                                        usercard="name=杜江侦察记">@杜江侦察记</a> <a
+                                                                        target="_blank" render="ext"
+                                                                        extra-data="type=atname"
+                                                                        href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
+                                                                        usercard="name=霍思燕">@霍思燕</a>
+                                                                加盟。据知情人士透露，昨晚录制节目时，杜江嗯哼远程录惊喜视频给霍思燕庆生，霍思燕现场感动到眼泪汪汪<img
+                                                                        class="W_img_face" render="ext"
+                                                                        src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
+                                                                        title="[心]" alt="[心]" type="face">这一对太甜了<img
+                                                                        class="W_img_face" render="ext"
+                                                                        src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
+                                                                        title="[心]" alt="[心]" type="face"> ​​​​
+                                                        </div>
+                                                </h3>
+                                                <div class="list_nod clearfix">
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813bh30tj22c0340x6p.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813d9m02j22c0340npd.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g88138y5zuj22c03407wj.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813fsm5tj22c0340qv6.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="subinfo_box clearfix">
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span
+                                                                        class="subinfo_face "><img
+                                                                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
+                                                                                width="20" height="20"
+                                                                                alt=""></span></a>
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span
+                                                                        class="subinfo S_txt2">天天综艺</span></a>
+                                                        <span class="subinfo S_txt2">今天 12:37</span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-dianzan"></em><em>71945</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-pinglun"></em><em>2954</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-zhuanfa"></em><em>1693</em></span>
+                                                </div>
+                                        </div>
+                                        <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
+                                                href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
+                                                suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
+                                                suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
+                                                <h3 class="list_title_s W_autocut">
+                                                        <div><a target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">喵喵喵！#</a><a
+                                                                        target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">
+                                                                        #故宫神武门巨型喵</a> 巨型猫<a target="_blank" render="ext"
+                                                                        extra-data="type=atname"
+                                                                        href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
+                                                                        usercard="name=杜江侦察记">萌翻众人</a> <a
+                                                                        target="_blank" render="ext"
+                                                                        extra-data="type=atname"
+                                                                        href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
+                                                                        usercard="name=霍思燕"></a> ​​​​</div>
+                                                </h3>
+                                                <div class="list_nod clearfix">
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/884f7263ly1g8dtvcw25pj20sg0iy44e.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/884f7263ly1g8dtvj85cij20sg0iywkl.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/884f7263ly1g8dtvpfo2tj20sg0iywk6.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/884f7263ly1g8dtvssthuj20sg0iyafn.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="subinfo_box clearfix">
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span
+                                                                        class="subinfo_face "><img
+                                                                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
+                                                                                width="20" height="20"
+                                                                                alt=""></span></a>
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i
+                                                                        class="iconfont icon-tian"></i><span
+                                                                        class="subinfo S_txt2">天天综艺</span></a>
+                                                        <span class="subinfo S_txt2">今天 12:37</span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-dianzan"></em><em>71945</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-pinglun"></em><em>2954</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-zhuanfa"></em><em>1693</em></span>
+                                                </div>
+                                        </div>
+                                        <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
+                                                href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
+                                                suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
+                                                suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
+                                                <h3 class="list_title_s W_autocut">
+                                                        <div><a target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">人间岁月！</a><a
+                                                                        target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">
+                                                                </a> <a target="_blank" render="ext"
+                                                                        extra-data="type=atname"
+                                                                        href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
+                                                                        usercard="name=杜江侦察记"></a> <a target="_blank"
+                                                                        render="ext" extra-data="type=atname"
+                                                                        href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
+                                                                        usercard="name=霍思燕"></a>​​​​</div>
+                                                </h3>
+                                                <div class="list_nod clearfix">
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/7fb33a2fly1g8dq95xa02j20j60d5tb1.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/7fb33a2fly1g8dq95t1nij20j60d4abb.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/7fb33a2fly1g8dq95v2eoj20j60fzjta.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/7fb33a2fly1g8dq95xgeaj20j60rbq50.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="subinfo_box clearfix">
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span
+                                                                        class="subinfo_face "><img
+                                                                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
+                                                                                width="20" height="20"
+                                                                                alt=""></span></a>
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i
+                                                                        class="iconfont icon-tian"></i><span
+                                                                        class="subinfo S_txt2">天天综艺</span></a>
+                                                        <span class="subinfo S_txt2">今天 12:37</span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-dianzan"></em><em>71945</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-pinglun"></em><em>2954</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-zhuanfa"></em><em>1693</em></span>
+                                                </div>
+                                        </div>
+                                        <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
+                                                href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
+                                                suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
+                                                suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
+                                                <h3 class="list_title_s W_autocut">
+                                                        <div><a target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">日起日落，云吹云散，秋去冬来</a>
+                                                </h3>
+                                                <div class="list_nod clearfix">
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/4c56dd36ly1g8dsk61oahj22c0340npf.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/4c56dd36ly1g8dsk4r86jj22c0340b2b.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/4c56dd36ly1g8dsn5hu2oj23402c0kjn.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/4c56dd36ly1g8dsmveczej227c2yeb2c.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="subinfo_box clearfix">
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span
+                                                                        class="subinfo_face "><img
+                                                                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
+                                                                                width="20" height="20"
+                                                                                alt=""></span></a>
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i
+                                                                        class="iconfont icon-tian"></i><span
+                                                                        class="subinfo S_txt2">天天综艺</span></a>
+                                                        <span class="subinfo S_txt2">今天 12:37</span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-dianzan"></em><em>71945</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-pinglun"></em><em>2954</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-zhuanfa"></em><em>1693</em></span>
+                                                </div>
+                                        </div>
+                                        <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
+                                                href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
+                                                suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
+                                                suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
+                                                <h3 class="list_title_s W_autocut">
+                                                        <div><a target="_blank" render="ext"
+                                                                        suda-uatrack="key=topic_click&amp;value=click_topic"
+                                                                        class="a_topic" extra-data="type=topic"
+                                                                        href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">《她说：女性人生准则》</a>​​​​
+                                                        </div>
+                                                </h3>
+                                                <div class="list_nod clearfix">
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/999c05c7gy1g8dvgr61d2j20u03vkhdu.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/999c05c7gy1g8dvgq0v8jj20u04d4npe.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/999c05c7gy1g8dvgqba2rj20u03bcnpe.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                        <div class="pic W_piccut_v"><img
+                                                                        src="https://ww4.sinaimg.cn/thumb180/999c05c7gy1g8dvgsk9dbj20u04fikjm.jpg"
+                                                                        alt="">
+                                                        </div>
+                                                </div>
+                                                <div class="subinfo_box clearfix">
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span
+                                                                        class="subinfo_face "><img
+                                                                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
+                                                                                width="20" height="20"
+                                                                                alt=""></span></a>
+                                                        <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i
+                                                                        class="iconfont icon-tian"></i><span
+                                                                        class="subinfo S_txt2">天天综艺</span></a>
+                                                        <span class="subinfo S_txt2">今天 12:37</span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-dianzan"></em><em>71945</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-pinglun"></em><em>2954</em></span>
+                                                        <span class="rgt_line W_fr"></span>
+                                                        <span class="subinfo_rgt S_txt2"><em
+                                                                        class="iconfont icon-zhuanfa"></em><em>1693</em></span>
+                                                </div>
+                                        </div>
+                                        
+                        </div>
                 </div>
-                <div>
-                    <ul class="nav navbar-nav">
-                        <li ><a href="./Everydaymicro-bloghomepage.html">热门</a></li>
-                        <li><a href="#">头条</a></li>
-                        <li><a href="./Hotsearch.html">热搜</a></li>
-                        <li class="active"><a href="./Micro-bloglist.html">榜单</a></li>
-                        <li><a href="#">搞笑</a></li>
-                        <li><a href="#">社会</a></li>
-                        <li><a href="./Fashion.html">时尚</a></li>
-                        <li><a href="./movie.html">电影</a></li>
-                        <li><a href="#">体育</a></li>
-                        <li><a href="#">动漫</a></li>
-                        <input type="text" placeholder="搜索.." style="width: 500px;position:relative;top: 12px; ">
-                        <li style="float: right;"><a href="#">注册</a></li>
-                        <li style="float: right;"> <a href="#">登陆</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- 导航栏结束 -->
-        <!--  头部 -->
-        <div style="width: 750px;margin-right: 30px;">
-            <div class="UG_nav">
-                <ul
-                    style="height:40px;list-style:none;display: block;list-style-type: disc;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 0px;margin-inline-end: 0px;padding-inline-start: 40px;">
-                    <li>24小时</li>
-                    <li>1小时</li>
-                    <li>周榜</li>
-                    <li>月榜</li>
-                    <li>男榜</li>
-                    <li>女榜</li>
-                </ul>
-            </div>
-            <div style="margin-bottom: 20px;overflow: hidden;width: 660px;position: relative;"></div>
-            <!-- 正文 -->
-            <div class="UG_contents" id="PCD_pictext_i_v5">
-                <!--feed内容-->
-                <ul class="pt_ul clearfix" pagenum="" node-type="feed_list" cursor="">
-                    <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
-                        href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
-                        suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
-                        suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
-                        <h3 class="list_title_s W_autocut">
-                            <div><a target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">#霍思燕生日被杜江感动哭#</a><a
-                                    target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">#妻子的浪漫旅行
-                                    杜江霍思燕#</a> 今日《妻子的浪漫旅行》第三季官宣<a target="_blank" render="ext" extra-data="type=atname"
-                                    href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
-                                    usercard="name=杜江侦察记">@杜江侦察记</a> <a target="_blank" render="ext"
-                                    extra-data="type=atname"
-                                    href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
-                                    usercard="name=霍思燕">@霍思燕</a> 加盟。据知情人士透露，昨晚录制节目时，杜江嗯哼远程录惊喜视频给霍思燕庆生，霍思燕现场感动到眼泪汪汪<img
-                                    class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face">这一对太甜了<img class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face"> ​​​​</div>
-                        </h3>
-                        <div class="list_nod clearfix">
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813bh30tj22c0340x6p.jpg" alt="">
+                 <!-- 登陆 -->
+                 <div class="hezis" style="margin-top:-940px; margin-right: 280px; float: right;">
+                                <div class="hezic">
+                                    <div class="xiaxian">
+                                        <a href="#">账号登录</a>
+                                        <a href="#">安全登录</a>
+                                    </div>
+                                    <form class="denglu">
+                                        <input type="text" placeholder="邮箱/会员账号/手机号">
+                                        <input type="text" placeholder="请输入密码">
+                                        <input id="ckbox" type="checkbox"><span>记住我</span>
+                                        <span><a href="#">忘记密码</a></span>
+                                        <button type="button" class="btn">登录</button>
+                                        <span>还没有微博？</span>
+                                        <a href="#" style="font-size: 10px;">立即注册！</a>
+                                    </form>
+                                    <span>其他登录：
+                                        <img style="width: 15px; height: 15px;" src="./Picture/qq.png" alt="">
+                                        <img style="width: 15px; height: 15px;" src="./Picture/中国移动.png" alt="">
+                                        <img style="width: 15px; height: 15px;" src="./Picture/微信.png" alt="">
+                                        <img style="width: 15px; height: 15px;" src="./Picture/手机淘宝 .png" alt="">
+                                        <img style="width: 15px; height: 15px;" src="./Picture/360.png" alt="">
+                                    </span>
+                                </div>
                             </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813d9m02j22c0340npd.jpg" alt="">
+                            <!-- 登陆结束 -->
+                             <!-- 微博热门话题 -->
+                    <div class="hezid" style="margin-left:10px;height:400px;margin-top:-640px; margin-right: 280px; float: right;">
+                                <div class="hezie" style="height:400px">
+                                    <h4>微博热门话题</h4>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div>
+                                            <img src="./Picture/热门1.jpg" style="width: 60px; height: 60px; float: left;">
+                                            <div class="wzjz">
+                                                <span style="font-size: 15px;">#肖战工作室声明道歉#</span><br>
+                                                <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                                            </div>
+                                        </div>
+                                    </a><br>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div>
+                                            <img src="./Picture/热门2.jpg" style="width: 60px; height: 60px; float: left;">
+                                            <div class="wzjz">
+                                                <span style="font-size: 15px;">#霜降#</span><br>
+                                                <span>18.7亿阅读&nbsp;&nbsp;&nbsp;10.8万评论</span>
+                                            </div>
+                                        </div>
+                                    </a><br>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div>
+                                            <img src="./Picture/热门3.jpg" style="width: 60px; height: 60px; float: left;">
+                                            <div class="wzjz">
+                                                <span style="font-size: 15px;">#运动星力量#</span><br>
+                                                <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                                            </div>
+                                        </div>
+                                    </a><br>
+                                    <a href="#" style="text-decoration: none;">
+                                        <div>
+                                            <img src="./Picture/热门4.jpg" style="width: 60px; height: 60px; float: left;">
+                                            <div class="wzjz">
+                                                <span style="font-size: 15px;">#东京出现剧毒红火蚁#</span><br>
+                                                <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                                            </div>
+                                        </div>
+                                    </a><br>
+                                    <a href="#" style="text-decoration: none; ">
+                                        <div>
+                                            <img src="./Picture/热门5.jpg" style="width: 60px; height: 60px; float: left;">
+                                            <div class="wzjz">
+                                                <span style="font-size: 15px;">#初恋那件小事#</span><br>
+                                                <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="#" style="text-decoration: none; ">
+                                    <div class="wzjz">
+                                        <span style="float: right;">查看更多>>></span>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g88138y5zuj22c03407wj.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813fsm5tj22c0340qv6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="subinfo_box clearfix">
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span class="subinfo_face "><img
-                                        src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
-                                        width="20" height="20" alt=""></span></a>
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span
-                                    class="subinfo S_txt2">天天综艺</span></a>
-                            <span class="subinfo S_txt2">今天 12:37</span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-dianzan"></em><em>71945</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-pinglun"></em><em>2954</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-zhuanfa"></em><em>1693</em></span>
-                        </div>
-                    </div>
-                    <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
-                        href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
-                        suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
-                        suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
-                        <h3 class="list_title_s W_autocut">
-                            <div><a target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">#霍思燕生日被杜江感动哭#</a><a
-                                    target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">#妻子的浪漫旅行
-                                    杜江霍思燕#</a> 今日《妻子的浪漫旅行》第三季官宣<a target="_blank" render="ext" extra-data="type=atname"
-                                    href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
-                                    usercard="name=杜江侦察记">@杜江侦察记</a> <a target="_blank" render="ext"
-                                    extra-data="type=atname"
-                                    href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
-                                    usercard="name=霍思燕">@霍思燕</a> 加盟。据知情人士透露，昨晚录制节目时，杜江嗯哼远程录惊喜视频给霍思燕庆生，霍思燕现场感动到眼泪汪汪<img
-                                    class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face">这一对太甜了<img class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face"> ​​​​</div>
-                        </h3>
-                        <div class="list_nod clearfix">
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813bh30tj22c0340x6p.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813d9m02j22c0340npd.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g88138y5zuj22c03407wj.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813fsm5tj22c0340qv6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="subinfo_box clearfix">
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span class="subinfo_face "><img
-                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
-                                width="20" height="20" alt=""></span></a>
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i class="iconfont icon-tian"></i><span
-                                    class="subinfo S_txt2">天天综艺</span></a>
-                            <span class="subinfo S_txt2">今天 12:37</span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-dianzan"></em><em>71945</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-pinglun"></em><em>2954</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-zhuanfa"></em><em>1693</em></span>
-                        </div>
-                    </div>
-                    <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
-                        href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
-                        suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
-                        suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
-                        <h3 class="list_title_s W_autocut">
-                            <div><a target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">#霍思燕生日被杜江感动哭#</a><a
-                                    target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">#妻子的浪漫旅行
-                                    杜江霍思燕#</a> 今日《妻子的浪漫旅行》第三季官宣<a target="_blank" render="ext" extra-data="type=atname"
-                                    href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
-                                    usercard="name=杜江侦察记">@杜江侦察记</a> <a target="_blank" render="ext"
-                                    extra-data="type=atname"
-                                    href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
-                                    usercard="name=霍思燕">@霍思燕</a> 加盟。据知情人士透露，昨晚录制节目时，杜江嗯哼远程录惊喜视频给霍思燕庆生，霍思燕现场感动到眼泪汪汪<img
-                                    class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face">这一对太甜了<img class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face"> ​​​​</div>
-                        </h3>
-                        <div class="list_nod clearfix">
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813bh30tj22c0340x6p.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813d9m02j22c0340npd.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g88138y5zuj22c03407wj.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813fsm5tj22c0340qv6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="subinfo_box clearfix">
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span class="subinfo_face "><img
-                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
-                                width="20" height="20" alt=""></span></a>
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i class="iconfont icon-tian"></i><span
-                                    class="subinfo S_txt2">天天综艺</span></a>
-                            <span class="subinfo S_txt2">今天 12:37</span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-dianzan"></em><em>71945</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-pinglun"></em><em>2954</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-zhuanfa"></em><em>1693</em></span>
-                        </div>
-                    </div>
-                    <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
-                        href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
-                        suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
-                        suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
-                        <h3 class="list_title_s W_autocut">
-                            <div><a target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">#霍思燕生日被杜江感动哭#</a><a
-                                    target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">#妻子的浪漫旅行
-                                    杜江霍思燕#</a> 今日《妻子的浪漫旅行》第三季官宣<a target="_blank" render="ext" extra-data="type=atname"
-                                    href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
-                                    usercard="name=杜江侦察记">@杜江侦察记</a> <a target="_blank" render="ext"
-                                    extra-data="type=atname"
-                                    href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
-                                    usercard="name=霍思燕">@霍思燕</a> 加盟。据知情人士透露，昨晚录制节目时，杜江嗯哼远程录惊喜视频给霍思燕庆生，霍思燕现场感动到眼泪汪汪<img
-                                    class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face">这一对太甜了<img class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face"> ​​​​</div>
-                        </h3>
-                        <div class="list_nod clearfix">
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813bh30tj22c0340x6p.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813d9m02j22c0340npd.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g88138y5zuj22c03407wj.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813fsm5tj22c0340qv6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="subinfo_box clearfix">
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span class="subinfo_face "><img
-                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
-                                width="20" height="20" alt=""></span></a>
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i class="iconfont icon-tian"></i><span
-                                    class="subinfo S_txt2">天天综艺</span></a>
-                            <span class="subinfo S_txt2">今天 12:37</span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-dianzan"></em><em>71945</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-pinglun"></em><em>2954</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-zhuanfa"></em><em>1693</em></span>
-                        </div>
-                    </div>
-                    <div class="UG_list_a" mid="4430535600749405" action-type="feed_list_item"
-                        href="//weibo.com/1878335471/IcOmY38Xb?ref=feedsdk"
-                        suda="key=nologin_home&amp;value=nologin_card_weibo:4430535600749405"
-                        suda-uatrack="key=www_unlogin_home&amp;value=billboard_feed">
-                        <h3 class="list_title_s W_autocut">
-                            <div><a target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E9%9C%8D%E6%80%9D%E7%87%95%E7%94%9F%E6%97%A5%E8%A2%AB%E6%9D%9C%E6%B1%9F%E6%84%9F%E5%8A%A8%E5%93%AD%23&amp;from=default">#霍思燕生日被杜江感动哭#</a><a
-                                    target="_blank" render="ext" suda-uatrack="key=topic_click&amp;value=click_topic"
-                                    class="a_topic" extra-data="type=topic"
-                                    href="//s.weibo.com/weibo?q=%23%E5%A6%BB%E5%AD%90%E7%9A%84%E6%B5%AA%E6%BC%AB%E6%97%85%E8%A1%8C+%E6%9D%9C%E6%B1%9F%E9%9C%8D%E6%80%9D%E7%87%95%23&amp;from=default">#妻子的浪漫旅行
-                                    杜江霍思燕#</a> 今日《妻子的浪漫旅行》第三季官宣<a target="_blank" render="ext" extra-data="type=atname"
-                                    href="//weibo.com/n/%E6%9D%9C%E6%B1%9F%E4%BE%A6%E5%AF%9F%E8%AE%B0?from=feed&amp;loc=at"
-                                    usercard="name=杜江侦察记">@杜江侦察记</a> <a target="_blank" render="ext"
-                                    extra-data="type=atname"
-                                    href="//weibo.com/n/%E9%9C%8D%E6%80%9D%E7%87%95?from=feed&amp;loc=at"
-                                    usercard="name=霍思燕">@霍思燕</a> 加盟。据知情人士透露，昨晚录制节目时，杜江嗯哼远程录惊喜视频给霍思燕庆生，霍思燕现场感动到眼泪汪汪<img
-                                    class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face">这一对太甜了<img class="W_img_face" render="ext"
-                                    src="//img.t.sinajs.cn/t4/appstyle/expression/ext/normal/8a/2018new_xin_org.png"
-                                    title="[心]" alt="[心]" type="face"> ​​​​</div>
-                        </h3>
-                        <div class="list_nod clearfix">
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813bh30tj22c0340x6p.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813d9m02j22c0340npd.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g88138y5zuj22c03407wj.jpg" alt="">
-                            </div>
-                            <div class="pic W_piccut_v"><img
-                                    src="https://ww4.sinaimg.cn/thumb180/6ff51fefly1g8813fsm5tj22c0340qv6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="subinfo_box clearfix">
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><span class="subinfo_face "><img
-                                src="http://gss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/b3fb43166d224f4a574b845b09f790529922d1ac.jpg"
-                                width="20" height="20" alt=""></span></a>
-                            <a href="/xltv?from=feed&amp;loc=nickname" target="_blank"><i class="iconfont icon-tian"></i><span
-                                    class="subinfo S_txt2">天天综艺</span></a>
-                            <span class="subinfo S_txt2">今天 12:37</span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-dianzan"></em><em>71945</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-pinglun"></em><em>2954</em></span>
-                            <span class="rgt_line W_fr"></span>
-                            <span class="subinfo_rgt S_txt2"><em
-                                    class="iconfont icon-zhuanfa"></em><em>1693</em></span>
-                        </div>
-                    </div>
-                    
+                            <!-- 微博热门话题结束 -->
+                            
+                            <div class="wzj">
+                                        <div class="hezif">
+                                            <h5>微博精彩</h5>
+                                            <span>热门微博</span>&nbsp;&nbsp;&nbsp;
+                                            <span>热门话题</span><br>
+                                            <span> 名人堂</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <span>微博会员</span><br>
+                                            <span>微相册</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <span>微游戏</span><br>
+                                            <span>微指数</span>
+                                        </div>
+                                        <div class="hezif">
+                                            <h5>手玩微博</h5>
+                                            <img src="./Picture/微博二维码.png" style="width: 80px; height: 80px; float: left;">
+                                            &nbsp;&nbsp;&nbsp;<span>扫码下载，更多版本</span>
+                                            &nbsp;&nbsp;&nbsp;<span>戳这里</span>
+                                        </div>
+                                        <div class="hezif">
+                                            <h5>认证&合作</h5>
+                                            <span>申请认证</span>&nbsp;&nbsp;&nbsp;
+                                            <span>链接网站</span><br>
+                                            <span> 企业微博</span>&nbsp;&nbsp;&nbsp;
+                                            <span>广告服务</span><br>
+                                            <span>微博标识</span>&nbsp;&nbsp;&nbsp;
+                                            <span>广告代理</span><br>
+                                            <span>开放平台</span>
+                                        </div>
+                                        <div class="hezif">
+                                            <h5>微博帮助</h5>
+                                            <span>常见服务</span><br>
+                                            <span>自助服务</span><br>
+                                        </div>
+                                    </div>
+                                
+                                    </div>
+                                    <div class="sss">
+                                        <div class="wzj">
+                                            <div class="hezig">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>微博客服</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>客服热线400-960-960</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>意见反馈</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>开放平台</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>舞弊举报</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>微博招聘</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>新浪网导航</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>投诉处理大厅</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                                <span>DMCA投诉/Report</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>京ICP证100780</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>互联网药品服务许可证</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>互联网医疗保健许可证</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>京网问[2017]10291-1172号</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>增值电信业务经营许可证B2-20140447</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>Copyright © 2009-2019 WEIBO 北京微梦创科网络技术有限公司</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <span>京公网安备11000002000019号</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </body>
+                                
+        </div>
+        <!-- 正文结束 -->
