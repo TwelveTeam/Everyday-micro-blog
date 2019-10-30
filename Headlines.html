@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>天天微博</title>
+    <link rel="stylesheet" href="Head.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1470315_ly1a4r87jf.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./Bloglist.css">
+    <link rel="stylesheet" href="Listicon/iconfont.css">
+</head>
+<style>
+    body,
+    div,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    pre,
+    code,
+    form,
+    fieldset,
+    legend,
+    input,
+    textarea,
+    p,
+    blockquote,
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        display: block;
+    }
+
+    .UG_list_b .pic {
+        margin-right: 13px;
+    }
+
+    .UG_list_a .pic,
+    .UG_list_b .pic {
+        width: 158px;
+        height: 102px;
+        margin-right: 9px;
+    }
+
+    .UG_list_b .pic {
+        float: left;
+        position: relative;
+        overflow: hidden;
+    }
+
+    body,
+    legend,
+    .W_input:focus,
+    .S_txt1,
+    .W_btn_b,
+    .SW_fun .S_func1 {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .UG_list_b,
+    .UG_list_c {
+        font-size: 0;
+    }
+
+    .UG_list_a,
+    .UG_list_b,
+    .UG_list_v1,
+    .UG_list_v2,
+    .UG_bn_a,
+    .UG_bn_d {
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    .WB_frame_a,
+    .WB_frame_a_fix,
+    .WB_frame_b,
+    .WB_frame_c,
+    .WB_frame_d,
+    .WB_main_l,
+    .WB_main_c,
+    .WB_main_r,
+    .WB_main_cr,
+    .WB_main_a,
+    .WB_toptips {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        font-size: 12px;
+    }
+
+    body {
+        font: 12px/1.3 Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+        overflow-x: hidden;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .UG_list_a .pic::after,
+    .UG_list_b .pic::after,
+    .UG_list_c .pic::after,
+    .UG_list_d .pic::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid rgba(0, 0, 0, .05);
+    }
+
+    .hezid .hezie .text-tite {
+        width: 285px;
+        height: 61px;
+    }
+</style>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="blog">
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">天天微博</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="./Everydaymicro-bloghomepage.html">热门</a></li>
+                        <li class="active"><a href="#">头条</a></li>
+                        <li><a href="./Hotsearch.html">热搜</a></li>
+                        <li><a href="./Micro-bloglist.html">榜单</a></li>
+                        <li><a href="#">搞笑</a></li>
+                        <li><a href="./Sociology.html">社会</a></li>
+                        <li><a href="./Fashion.html">时尚</a></li>
+                        <li><a href="./movie.html">电影</a></li>
+                        <li><a href="#">体育</a></li>
+                        <li><a href="#">动漫</a></li>
+                        <input type="text" placeholder="搜索.." style="width: 500px;position:relative;top: 12px; ">
+                        <li style="float: right;"><a href="#">注册</a></li>
+                        <li style="float: right;"> <a href="#">登陆</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 导航栏结束 -->
+        <div style="width: 761px;margin-right: 30px;">
+            <!-- 正文 -->
+            <div class="UG_list_b">
+                <div class="pic W_piccut_v">
+                    <img src="https://wx4.sinaimg.cn/crop.96.0.508.381.240/005IdFSSly4g8et6jex2aj30jg0almxh.jpg" alt=""
+                        style="width:158px;;height:108px;">
+                </div>
+                <div class="list_des" style="padding-top:20px">
+                    <h3 class="list_title_b"><a href="https://weibo.com/ttarticle/p/show?id=2309404432661606170722"
+                            class="S_txt1" target="_blank">“曾红得发紫，现无戏可拍”的5位明星，霍建华上榜，他最为可惜"</a></h3>
+                    <div class="subinfo_box clearfix" style="padding-top:10px">
+                        <a href="/n/逝世无心"><span class="subinfo_face "><img
+                                    src="https://tvax3.sinaimg.cn/crop.0.0.690.690.50/005IdFSSly8g89dmtlexgj30j60j6di3.jpg?KID=imgbed,tva&amp;Expires=1572328822&amp;ssig=aadhX9Roer"
+                                    width="20" height="20" alt="" style="border-radius: 50%;"></span></a>
+                        <a href="/n/逝世无心"><span class="subinfo S_txt2" style="padding-right:15px;">悲雪情澜</span></a>
+                        <span class="subinfo S_txt2">今天 09:25</span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>3</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>1</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>228</em></span>
+                    </div>
+                </div>
+            </div>
+            <div class="UG_list_b">
+                <div class="pic W_piccut_v">
+                    <img src="https://wx1.sinaimg.cn/crop.0.55.553.414.240/97ca200fly4g7psh61cuvj20fd0fd0tx.jpg" alt=""
+                        style="width:158px;;height:108px;">
+                </div>
+                <div class="list_des" style="padding-top:20px">
+                    <h3 class="list_title_b"><a href="https://weibo.com/ttarticle/p/show?id=2309404432661606170722"
+                            class="S_txt1" target="_blank">关之琳自愿被塞高尔夫球真相曝光，网友：豪放起来不要命</a></h3>
+                    <div class="subinfo_box clearfix" style="padding-top:10px">
+                        <a href="/n/逝世无心"><span class="subinfo_face "><img
+                                    src="https://tvax4.sinaimg.cn/crop.0.0.700.700.50/e525c563ly8g85kwtkxr7j20jg0jg401.jpg?KID=imgbed,tva&Expires=1572329718&ssig=3LeP2bZaxZ"
+                                    width="20" height="20" alt="" style="border-radius: 50%;"></span></a>
+                        <a href="/n/逝世无心"><span class="subinfo S_txt2" style="padding-right:15px;">逝世无心</span></a>
+                        <span class="subinfo S_txt2">今天 09:45</span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>322</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>13</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>228</em></span>
+                    </div>
+                </div>
+            </div>
+            <div class="UG_list_b">
+                <div class="pic W_piccut_v">
+                    <img src="https://wx3.sinaimg.cn/crop.0.143.1080.810.240/007RTUqngy1g8ebyywv10j30u013wwpf.jpg"
+                        alt="" style="width:158px;;height:108px;">
+                </div>
+                <div class="list_des" style="padding-top:20px">
+                    <h3 class="list_title_b"><a href="https://weibo.com/ttarticle/p/show?id=2309404432661606170722"
+                            class="S_txt1" target="_blank">双眼皮手术有些什么风险？让我整形医生告诉你怎么凑字数</a></h3>
+                    <div class="subinfo_box clearfix" style="padding-top:10px">
+                        <a href="/n/逝世无心"><span class="subinfo_face "><img
+                                    src="https://tvax4.sinaimg.cn/crop.0.0.512.512.50/007RTUqnly8g73uywnhfyj30e80e8wey.jpg?KID=imgbed,tva&Expires=1572329718&ssig=DZf1c%2BF6nA"
+                                    width="20" height="20" alt="" style="border-radius: 50%;"></span></a>
+                        <a href="/n/逝世无心"><span class="subinfo S_txt2" style="padding-right:15px;">整形医院罗杰</span></a>
+                        <span class="subinfo S_txt2">今天 09:45</span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>322</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>133</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>2248</em></span>
+                    </div>
+                </div>
+            </div>
+            <div class="UG_list_b">
+                <div class="pic W_piccut_v">
+                    <img src="https://wx2.sinaimg.cn/crop.0.42.416.312.240/007aKHhQly4g6w00q6i5mj30bk0bt75f.jpg" alt=""
+                        style="width:158px;;height:108px;">
+                </div>
+                <div class="list_des" style="padding-top:20px">
+                    <h3 class="list_title_b"><a href="https://weibo.com/ttarticle/p/show?id=2309404432661606170722"
+                            class="S_txt1" target="_blank">张柏芝终于不再隐瞒，公开晒出与男友的亲密照，网友：该公开了</a></h3>
+                    <div class="subinfo_box clearfix" style="padding-top:10px">
+                        <a href="/n/逝世无心"><span class="subinfo_face "><img
+                                    src="https://tvax3.sinaimg.cn/crop.0.0.700.700.50/6f8f3229ly8g8a6rehlh5j20jg0jgwfw.jpg?KID=imgbed,tva&Expires=1572329718&ssig=dDrAXWRI9K"
+                                    width="20" height="20" alt="" style="border-radius: 50%;"></span></a>
+                        <a href="/n/逝世无心"><span class="subinfo S_txt2" style="padding-right:15px;">秋风萧瑟</span></a>
+                        <span class="subinfo S_txt2">今天 09:31</span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>3222</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>1313</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>2248</em></span>
+                    </div>
+                </div>
+            </div>
+            <div class="UG_list_b">
+                <div class="pic W_piccut_v">
+                    <img src="https://wx1.sinaimg.cn/crop.89.0.902.677.240/005vL0aRly4g8e9332irpj30u00it75e.jpg" alt=""
+                        style="width:158px;;height:108px;">
+                </div>
+                <div class="list_des" style="padding-top:20px">
+                    <h3 class="list_title_b"><a href="https://weibo.com/ttarticle/p/show?id=2309404432661606170722"
+                            class="S_txt1" target="_blank">成都万达匹兹堡大学医学中心国际医院在新区举行奠基仪式</a></h3>
+                    <div class="subinfo_box clearfix" style="padding-top:10px">
+                        <a href="/n/逝世无心"><span class="subinfo_face "><img
+                                    src="https://tvax1.sinaimg.cn/crop.0.0.599.599.50/005vL0aRgy1fdohaethppj30go0got8o.jpg?KID=imgbed,tva&Expires=1572329718&ssig=6hlSKrfUFP"
+                                    width="20" height="20" alt="" style="border-radius: 50%;"></span></a>
+                        <a href="/n/逝世无心"><span class="subinfo S_txt2" style="padding-right:15px;">天府发布</span></a>
+                        <span class="subinfo S_txt2">今天 08:25</span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>3222</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>1313</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>2248</em></span>
+                    </div>
+                </div>
+            </div>
+            <div class="UG_list_b">
+                <div class="pic W_piccut_v">
+                    <img src="https://wx3.sinaimg.cn/crop.0.56.570.427.240/0064nefqly4g8g0ffsuidj30fu0fl0st.jpg" alt=""
+                        style="width:158px;;height:108px;">
+                </div>
+                <div class="list_des" style="padding-top:20px">
+                    <h3 class="list_title_b"><a href="https://weibo.com/ttarticle/p/show?id=2309404432661606170722"
+                            class="S_txt1" target="_blank">绝对有用！教师资格证《综合素质》核心考点速记，记住60分轻松到手！</a></h3>
+                    <div class="subinfo_box clearfix" style="padding-top:10px">
+                        <a href="/n/逝世无心"><span class="subinfo_face "><img
+                                    src="https://tva4.sinaimg.cn/crop.26.30.246.246.50/0064nefqgw1f1ks6ah7csj308c08caat.jpg?KID=imgbed,tva&Expires=1572429617&ssig=FoWV7SB4uz"
+                                    width="20" height="20" alt="" style="border-radius: 50%;"></span></a>
+                        <a href="/n/逝世无心"><span class="subinfo S_txt2" style="padding-right:15px;">天府发布</span></a>
+                        <span class="subinfo S_txt2">今天 08:25</span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>3222</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>1313</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>2248</em></span>
+                    </div>
+                </div>
+            </div>
+            <div class="UG_list_b">
+                <div class="pic W_piccut_v">
+                    <img src="https://wx2.sinaimg.cn/crop.68.0.504.378.240/4d30df45ly4g8g06l6l1bj20hs0aiaae.jpg" alt=""
+                        style="width:158px;;height:108px;">
+                </div>
+                <div class="list_des" style="padding-top:20px">
+                    <h3 class="list_title_b"><a href="https://weibo.com/ttarticle/p/show?id=2309404432661606170722"
+                            class="S_txt1" target="_blank">坐拥私人岛屿的高调白富美，背后竟是一桩骇人听闻的碎尸案</a></h3>
+                    <div class="subinfo_box clearfix" style="padding-top:10px">
+                        <a href="/n/逝世无心"><span class="subinfo_face "><img
+                                    src="https://tvax4.sinaimg.cn/crop.0.0.512.512.50/4d30df45ly8g6pnfvi7pnj20e80e80te.jpg?KID=imgbed,tva&Expires=1572429617&ssig=twDQGzi5a8"
+                                    width="20" height="20" alt="" style="border-radius: 50%;"></span></a>
+                        <a href="/n/逝世无心"><span class="subinfo S_txt2" style="padding-right:15px;">悬疑志</span></a>
+                        <span class="subinfo S_txt2">今天 08:25</span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>3222</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>1313</em></span>
+                        <span class="rgt_line W_fr"></span>
+                        <span class="subinfo_rgt S_txt2"><em class="iconfont icon-dianzan"></em><em>2248</em></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 正文结束 -->
+        </div>
+        <!-- 登陆框 -->
+        <div class="hezis" style="margin-top:-800px; margin-right: 380px; float: right;">
+            <div class="hezic">
+                <div class="xiaxian">
+                    <a href="#">账号登录</a>
+                    <a href="#">安全登录</a>
+                </div>
+                <form class="denglu">
+                    <input type="text" placeholder="邮箱/会员账号/手机号">
+                    <input type="text" placeholder="请输入密码">
+                    <input id="ckbox" type="checkbox"><span>记住我</span>
+                    <span><a href="#">忘记密码</a></span>
+                    <button type="button" class="btn">登录</button>
+                    <span>还没有微博？</span>
+                    <a href="#" style="font-size: 10px;">立即注册！</a>
+                </form>
+                <span>其他登录：
+                    <img style="width: 15px; height: 15px;" src="./Picture/qq.png" alt="">
+                    <img style="width: 15px; height: 15px;" src="./Picture/中国移动.png" alt="">
+                    <img style="width: 15px; height: 15px;" src="./Picture/微信.png" alt="">
+                    <img style="width: 15px; height: 15px;" src="./Picture/手机淘宝 .png" alt="">
+                    <img style="width: 15px; height: 15px;" src="./Picture/360.png" alt="">
+                </span>
+            </div>
+        </div>
+        <!-- 登陆结束 -->
+        <!-- 微博热门话题 -->
+        <div class="hezid" style="margin-top:-480px; margin-right: 380px; float: right;">
+            <div class="hezie" style="height:415px">
+                <h4>微博热门话题</h4>
+                <a href="#" style="text-decoration: none;">
+                    <div class="text-tite">
+                        <img src="./Picture/热门1.jpg" style="width: 60px; height: 60px; float: left;">
+                        <div class="wzjz">
+                            <span style="font-size: 15px;">#肖战工作室声明道歉#</span><br>
+                            <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                        </div>
+                    </div>
+                </a><br>
+                <a href="#" style="text-decoration: none;">
+                    <div class="text-tite">
+                        <img src="./Picture/热门2.jpg" style="width: 60px; height: 60px; float: left;">
+                        <div class="wzjz">
+                            <span style="font-size: 15px;">#霜降#</span><br>
+                            <span>18.7亿阅读&nbsp;&nbsp;&nbsp;10.8万评论</span>
+                        </div>
+                    </div>
+                </a><br>
+                <a href="#" style="text-decoration: none;">
+                    <div class="text-tite">
+                        <img src="./Picture/热门3.jpg" style="width: 60px; height: 60px; float: left;">
+                        <div class="wzjz">
+                            <span style="font-size: 15px;">#运动星力量#</span><br>
+                            <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                        </div>
+                    </div>
+                </a><br>
+                <a href="#" style="text-decoration: none;">
+                    <div class="text-tite">
+                        <img src="./Picture/热门4.jpg" style="width: 60px; height: 60px; float: left;">
+                        <div class="wzjz">
+                            <span style="font-size: 15px;">#东京出现剧毒红火蚁#</span><br>
+                            <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                        </div>
+                    </div>
+                </a><br>
+                <a href="#" style="text-decoration: none; ">
+                    <div class="text-tite">
+                        <img src="./Picture/热门5.jpg" style="width: 60px; height: 60px; float: left;">
+                        <div class="wzjz">
+                            <span style="font-size: 15px;">#初恋那件小事#</span><br>
+                            <span>13.7亿阅读&nbsp;&nbsp;&nbsp;101.8万评论</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a href="#" style="text-decoration: none; ">
+                <div class="wzjz">
+                    <span style="float: right;">查看更多>>></span>
+                </div>
+            </a>
+        </div>
+        <!-- 微博热门话题结束 -->
+        <meta>
+        <!-- 底部 -->
+        <div class="wzj">
+            <div class="hezif">
+                <h5>微博精彩</h5>
+                <span>热门微博</span>&nbsp;&nbsp;&nbsp;
+                <span>热门话题</span><br>
+                <span> 名人堂</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>微博会员</span><br>
+                <span>微相册</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>微游戏</span><br>
+                <span>微指数</span>
+            </div>
+            <div class="hezif">
+                <h5>手玩微博</h5>
+                <img src="./Picture/微博二维码.png" style="width: 80px; height: 80px; float: left;">
+                &nbsp;&nbsp;&nbsp;<span>扫码下载，更多版本</span>
+                &nbsp;&nbsp;&nbsp;<span>戳这里</span>
+            </div>
+            <div class="hezif">
+                <h5>认证&合作</h5>
+                <span>申请认证</span>&nbsp;&nbsp;&nbsp;
+                <span>链接网站</span><br>
+                <span> 企业微博</span>&nbsp;&nbsp;&nbsp;
+                <span>广告服务</span><br>
+                <span>微博标识</span>&nbsp;&nbsp;&nbsp;
+                <span>广告代理</span><br>
+                <span>开放平台</span>
+            </div>
+            <div class="hezif">
+                <h5>微博帮助</h5>
+                <span>常见服务</span><br>
+                <span>自助服务</span><br>
+            </div>
+        </div>
+        <div class="sss">
+            <div class="wzj">
+                <div class="hezig">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>微博客服</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>客服热线400-960-960</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>意见反馈</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>开放平台</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>舞弊举报</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>微博招聘</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>新浪网导航</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>投诉处理大厅</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    <span>DMCA投诉/Report</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>京ICP证100780</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>互联网药品服务许可证</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>互联网医疗保健许可证</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>京网问[2017]10291-1172号</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>增值电信业务经营许可证B2-20140447</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Copyright © 2009-2019 WEIBO 北京微梦创科网络技术有限公司</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>京公网安备11000002000019号</span>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束 -->
+</body>
