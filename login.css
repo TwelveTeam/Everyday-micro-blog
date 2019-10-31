@@ -61,7 +61,7 @@ p{
     border: 1px solid #cbcbcb;
     position: relative;
 }
-.top{
+.topp{
     width: 405px;
     height: 35px;
     outline: 1px solid #cbcbcb;
@@ -158,4 +158,12 @@ input{
 		text-align: center;
 		margin: 15px auto;
 		line-height: 23px;
+}
+.blog{
+    margin: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.navbar{
+    position:absolute;
 }

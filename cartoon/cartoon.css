@@ -1,4 +1,4 @@
-.zhengge{
+.zhenge{
     float: left;
     margin: 0; 
     width: 100%;
@@ -6,51 +6,91 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    padding-left: 10%;
     -webkit-font-smoothing: antialiased;
+}
+.container-fluid{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    border-radius: 5px;
+}
+.hezia{
+    float: left;
+    width: 60%;
 }
 .hezi{
     float: left;
     margin: 0; 
     width: 100%;
     border-bottom-style: ridge;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     -webkit-font-smoothing: antialiased;
-}
-.hezia{
-    float: left;
-    width: 60%;
 }
 .wzjz{
     padding-top: 2%;
     padding-left: 27%;
-}
-.wzjz>a>h3{
-    color: #333;
-}
-.wzjz>a>h3:hover{
-    color: #eb7350;
-}
-img{
-    width: 200px;
-    height: 150px;
-}
-.kkk{
-    float: left;
+    color: #808080;
 }
 .headtx{
+    width: 100%;
+    margin-top: 7%;
+}
+.headtx>span{
+    float: right;
+    color: #808080;
+}
+.headtx>span>img{
+    float: left;
     width: 20px;
     height: 20px;
+    bottom: 0%;
+    margin-left: 5%;
+}
+h3{
+    font-weight: normal;
+    font-size: 20px;
+    color: #000;
+}
+#btys{
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+}
+.tpys{
     border-radius: 25px;
 }
-span{
-    font-size: 5px;
+a{
+    color: #000;
 }
-.youduiqi{
-    float: right;
-    border-left-style: ridge;
-    padding-left: 10px;
+#lj{
+    color: #eb7350;
+}
+a:hover{
+    color: #eb7350;
+}
+span{
+    color: #808080;
+}
+.ys{
+    width: 20px;
+    height: 20px;
+}
+.picv{
+    float: left;
+    overflow: hidden;
+    width: 158px;
+    height: 102px;
+    margin-right: 9px;
+    margin-top: 5px;
+    display: block;
+}
+.sb{
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+
 }
 .hezis{
     float: left;
@@ -91,20 +131,19 @@ span{
     width: 80%;
     margin: 20px;
 }
-.hezid{
+#hezid{
+    border: red;
     border-top-style: ridge;
     margin-top: 20px;
     float: left;
     width: 350px;
-    height: 470px;
     margin-left: 100px;
     background-color: #f2f2f5;
 }
-.hezie{
-    width: 300px;
-    height: 900px;
-    padding: 10px;
+#hezie{
+    padding: 20px;
     margin: 10px;
+
     border-bottom-style: ridge;
 }
 .wzjz>span{
@@ -124,11 +163,6 @@ span{
     padding-left: 15%;
     width: 100%;
 }
-/* .hezig{
-    float: left;
-
-    background-color: #f2f2f5;
-} */
 .sss{
     float: left;
     width: 100%;
@@ -154,4 +188,15 @@ span{
 }
 .bq>li>a:hover{
     color: #eb7350;
+}
+.ll{
+    margin-top: 30px;
+}
+.gd{
+    background-color: bisque;
+    float: right;
+    width: 100%;
+}
+.jz{
+    text-align: center;
 }

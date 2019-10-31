@@ -4,13 +4,39 @@
 	<meta charset="UTF-8">
 	<title>登录</title>
 <link rel="stylesheet" type="text/css" href="./login.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 	<header>
-		<a href="./Everydaymicro-bloghomepage.html">首页</a>
+		<!-- <a href="./Everydaymicro-bloghomepage.html">首页</a> -->
+		<div class="blog">
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">天天微博</a>
+					</div>
+					<div>
+						<ul class="nav navbar-nav">
+							<li><a href="./Everydaymicro-bloghomepage.html">热门</a></li>
+							<li><a href="./Headlines.html">头条</a></li>
+							<li><a href="./Hotsearch.html">热搜</a></li>
+							<li><a href="./Micro-bloglist.html">榜单</a></li>
+							<li><a href="./Sociology.html">社会</a></li>
+							<li><a href="./Fashion.html">时尚</a></li>
+							<li><a href="./movie/movie.html">电影</a></li>
+							<li><a href="./sports/sports.html">体育</a></li>
+							<li><a href="./cartoon/cartoon.html">动漫</a></li>
+							<input type="text" placeholder="搜索.." style="width: 500px;position:relative;top: 12px;height: 30px; ">
+							<li style="float: right;"><a href="./Register.html">注册</a></li>
+							<li class="active" style="float: right;"> <a href="./Signin.html">登陆</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
 	</header>
 	<main>
-		<!-- 单击跳转百度页面 -->
+		<!-- 单击跳转新浪微博页面 -->
 			<form action="https://weibo.com/?category=7">    	
 		<div class="fl"></div>
 		<div class="fr">
@@ -20,7 +46,7 @@
 			</div>
 			<div class="login">
 				<form>
-					<div class="top">
+					<div class="topp">
 						<div class="normal tab">普通登录
 							<div>
 								<input type="text" name="phone" placeholder="请输入用户名">
