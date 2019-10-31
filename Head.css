@@ -178,3 +178,11 @@ tbody td{
 .bq>li>a:hover{
     color: #eb7350;
 }
+.gd{
+    background-color: bisque;
+    float: right;
+    width: 100%;
+}
+.jz{
+    text-align: center;
+}
