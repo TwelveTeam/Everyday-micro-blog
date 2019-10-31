@@ -144,4 +144,37 @@ tbody td{
     border-bottom: solid 1px black;
 }
 
+#hezid{
+    border: red;
+    border-top-style: ridge;
+    margin-top: 20px;
+    float: left;
+    width: 350px;
+    margin-left: 100px;
+    background-color: #f2f2f5;
+}
+#hezie{
+    padding: 20px;
+    margin: 10px;
 
+    border-bottom-style: ridge;
+}
+.bqh{
+    float: left;
+    width: 100%;
+    border-bottom-style: ridge;
+}
+.bq{
+    list-style: none;
+    padding: 0%;
+}
+.bq>li>a{
+    float: left;
+    width: 33.3%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+}
+.bq>li>a:hover{
+    color: #eb7350;
+}
