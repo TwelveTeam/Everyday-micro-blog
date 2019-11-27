@@ -187,3 +187,9 @@ tbody td{
 .jz{
     text-align: center;
 }
+.ga{
+    background-color: bisque;
+    float: right;
+    margin-right: -10px;
+    width: 770px;
+}
